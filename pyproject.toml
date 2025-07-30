@@ -1,0 +1,29 @@
+[project]
+name = "yfinance_mcp"
+version = "0.1.0"
+description = "MCP Server for Stock Analysis"
+authors = [{ name = "Ishita Jain", email = "ishitajain.2017@gmail.com" }]
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "fastmcp>=2.10.5",
+    "pydantic>=2.11.7",
+    "yfinance>=0.2.65",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=8.4.1",
+    "pytest-asyncio>=1.1.0",
+    "ruff>=0.12.3",
+]
+
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools]
+packages = ["yfinance_mcp"]
+
+[project.scripts]
+start = "yfinance_mcp.main:app"
