@@ -14,3 +14,7 @@ MCP Server for yfinance library
 
 ## Run a test client
 `uv run -m yfinance_mcp.test_client`
+
+## References
+- https://github.com/jlowin/fastmcp
+- https://github.com/ranaroussi/yfinance
