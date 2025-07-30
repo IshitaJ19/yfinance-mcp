@@ -1,5 +1,5 @@
 # yfinance-mcp
-MCP Server for yfinance library
+MCP Server for srock screening, built using the yfinance library.
 
 ## To set up
 1. Download and install `uv`
